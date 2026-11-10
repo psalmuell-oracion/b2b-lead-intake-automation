@@ -53,13 +53,13 @@ Filters and displays pending high-priority prospects for executive visibility.
 
 Data Pre-Processing & Reference Logic Proof
 Figure 1: Google Sheets Dynamic Pre-Processing (Leads Tab)
-[01_GoogleSheets_Leads_Preprocessed]
+[01_GoogleSheets_Leads_Preprocessed.png]
 
 Figure 2: Relational Reference Data Schema (Reference_Data Tab)
-[02_GoogleSheets_ReferenceData_LookupTable]
+[02_GoogleSheets_ReferenceData_LookupTable.png]
 
 Figure 3: SQL-Style Real-Time Executive View (Hot_Leads_Dashboard Tab)
-[03_GoogleSheets_HotLeads_Dashboard_Query]
+[03_GoogleSheets_HotLeads_Dashboard_Query.png]
 
 2. Automation Architecture & Integration (Zapier)
 The pipeline utilizes a multi-step Zapier workflow configured with strict conditional filters to protect CRM hygiene and focus sales execution on high-converting leads.
@@ -75,13 +75,13 @@ Action — Gmail (Send Email): Dispatches an instant plain-text SLA alert email 
 
 Integration & Execution Layer Proof
 Figure 4: Multi-Step Zapier Automation Canvas
-[04_Zapier_MultiStep_Automation_Canvas]
+[04_Zapier_MultiStep_Automation_Canvas.png]
 
 Figure 5: Salesforce CRM Ingested Record View
-[05_Salesforce_CRM_Ingested_Leads_View]
+[05_Salesforce_CRM_Ingested_Leads_View.png]
 
 Figure 6: Executive SLA Gmail Alert Dispatch
-[06_Gmail_Executive_SLA_Notification]
+[06_Gmail_Executive_SLA_Notification.png]
 
 3. Verification & Scenario Test Results
 Scenario Test Record: Rachel Vance | Vanguard Analytics | r.vance@vanguardanalytics.io | Hot
