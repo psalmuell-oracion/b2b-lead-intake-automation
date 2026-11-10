@@ -53,16 +53,16 @@ Filters and displays pending high-priority prospects for executive visibility.
 
 Data Pre-Processing & Reference Logic Proof
 Figure 1: Google Sheets Dynamic Pre-Processing (Leads Tab)
-[<img width="1366" height="768" alt="01_GoogleSheets_Leads_Preprocessed" src="https://github.com/user-attachments/assets/8aad4e3d-038b-4a52-bce2-c4b6c2217d1b" />
-]
+<img width="1366" height="768" alt="01_GoogleSheets_Leads_Preprocessed" src="https://github.com/user-attachments/assets/8aad4e3d-038b-4a52-bce2-c4b6c2217d1b" />
+
 
 Figure 2: Relational Reference Data Schema (Reference_Data Tab)
-[<img width="1366" height="768" alt="02_GoogleSheets_ReferenceData_LookupTable" src="https://github.com/user-attachments/assets/b000434c-69d3-4dc7-905a-bdb31e38ae12" />
-]
+<img width="1366" height="768" alt="02_GoogleSheets_ReferenceData_LookupTable" src="https://github.com/user-attachments/assets/b000434c-69d3-4dc7-905a-bdb31e38ae12" />
+
 
 Figure 3: SQL-Style Real-Time Executive View (Hot_Leads_Dashboard Tab)
-[<img width="1366" height="768" alt="03_GoogleSheets_HotLeads_Dashboard_Query" src="https://github.com/user-attachments/assets/3e18ccf2-45ef-40da-a377-eab864571a2b" />
-]
+<img width="1366" height="768" alt="03_GoogleSheets_HotLeads_Dashboard_Query" src="https://github.com/user-attachments/assets/3e18ccf2-45ef-40da-a377-eab864571a2b" />
+
 
 2. Automation Architecture & Integration (Zapier)
 The pipeline utilizes a multi-step Zapier workflow configured with strict conditional filters to protect CRM hygiene and focus sales execution on high-converting leads.
@@ -78,16 +78,16 @@ Action — Gmail (Send Email): Dispatches an instant plain-text SLA alert email 
 
 Integration & Execution Layer Proof
 Figure 4: Multi-Step Zapier Automation Canvas
-[<img width="1366" height="768" alt="04_Zapier_MultiStep_Automation_Canvas" src="https://github.com/user-attachments/assets/be2b86ca-8d8f-479e-a1b3-2482f230b6bc" />
-]
+<img width="1366" height="768" alt="04_Zapier_MultiStep_Automation_Canvas" src="https://github.com/user-attachments/assets/be2b86ca-8d8f-479e-a1b3-2482f230b6bc" />
+
 
 Figure 5: Salesforce CRM Ingested Record View
-[<img width="1366" height="768" alt="05_Salesforce_CRM_Ingested_Leads_View" src="https://github.com/user-attachments/assets/91e0f1b6-3a2b-4821-a3c1-8dfc796669f7" />
-]
+<img width="1366" height="768" alt="05_Salesforce_CRM_Ingested_Leads_View" src="https://github.com/user-attachments/assets/91e0f1b6-3a2b-4821-a3c1-8dfc796669f7" />
+
 
 Figure 6: Executive SLA Gmail Alert Dispatch
-[<img width="1366" height="768" alt="06_Gmail_Executive_SLA_Notification" src="https://github.com/user-attachments/assets/ce9037f8-dcad-4590-a9a6-ca7541d8f822" />
-]
+<img width="1366" height="768" alt="06_Gmail_Executive_SLA_Notification" src="https://github.com/user-attachments/assets/ce9037f8-dcad-4590-a9a6-ca7541d8f822" />
+
 
 3. Verification & Scenario Test Results
 Scenario Test Record: Rachel Vance | Vanguard Analytics | r.vance@vanguardanalytics.io | Hot
