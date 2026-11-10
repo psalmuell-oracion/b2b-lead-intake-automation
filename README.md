@@ -7,6 +7,7 @@
 
 ---
 
+
 ## Executive Summary & Architecture
 
 This project automates the B2B lead intake process, transforming raw form entries into enriched CRM records and real-time executive alerts. By applying dynamic data engineering formulas inside Google Sheets before triggering Zapier automation, the system eliminates manual data entry, reduces error rates, and ensures high-priority (`Hot`) leads trigger immediate sales SLAs.
@@ -15,6 +16,7 @@ This project automates the B2B lead intake process, transforming raw form entrie
 `[ Raw Google Sheet Entry ]` ──► `[ Dynamic Pre-Processing & SQL Filtering ]` ──► `[ Zapier Filter Logic ]` ──► `[ Salesforce Lead Creation ]` ──► `[ Executive Gmail Alert ]`
 
 ---
+
 
 ## 1. Data Engineering & Pre-Processing (Google Sheets)
 
@@ -64,7 +66,9 @@ Figure 3: SQL-Style Real-Time Executive View (Hot_Leads_Dashboard Tab)
 <img width="1366" height="768" alt="03_GoogleSheets_HotLeads_Dashboard_Query" src="https://github.com/user-attachments/assets/3e18ccf2-45ef-40da-a377-eab864571a2b" />
 
 
-2. Automation Architecture & Integration (Zapier)
+
+## 2. Automation Architecture & Integration (Zapier)
+
 The pipeline utilizes a multi-step Zapier workflow configured with strict conditional filters to protect CRM hygiene and focus sales execution on high-converting leads.
 
 Workflow Configurations
@@ -89,7 +93,9 @@ Figure 6: Executive SLA Gmail Alert Dispatch
 <img width="1366" height="768" alt="06_Gmail_Executive_SLA_Notification" src="https://github.com/user-attachments/assets/ce9037f8-dcad-4590-a9a6-ca7541d8f822" />
 
 
-3. Verification & Scenario Test Results
+
+## 3. Verification & Scenario Test Results
+
 Scenario Test Record: Rachel Vance | Vanguard Analytics | r.vance@vanguardanalytics.io | Hot
 
 Pre-Processing Output: Successfully calculated SLA Target (15-Min Response), Domain (vanguardanalytics.io), and Action Priority (Priority 1 - Direct Call).
