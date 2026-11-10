@@ -51,7 +51,7 @@ Excel
 =QUERY(Leads!A2:L, "SELECT C, D, E, H, I, L WHERE H = 'Hot' AND K = 'Pending' ORDER BY C ASC", 0)
 Filters and displays pending high-priority prospects for executive visibility.
 
-Data Pre-Processing & Reference Logic Proof
+## Data Pre-Processing & Reference Logic Proof
 
 Figure 1: Google Sheets Dynamic Pre-Processing (Leads Tab)
 <img width="1366" height="768" alt="01_GoogleSheets_Leads_Preprocessed" src="https://github.com/user-attachments/assets/8aad4e3d-038b-4a52-bce2-c4b6c2217d1b" />
@@ -79,7 +79,8 @@ Action — Salesforce (Create Lead): Connects via OAuth (Production Endpoint). M
 
 Action — Gmail (Send Email): Dispatches an instant plain-text SLA alert email to account managers containing lead parameters (Name, Company, Email, SLA Target, Action Priority).
 
-Integration & Execution Layer Proof
+## Integration & Execution Layer Proof
+
 Figure 4: Multi-Step Zapier Automation Canvas
 <img width="1366" height="768" alt="04_Zapier_MultiStep_Automation_Canvas" src="https://github.com/user-attachments/assets/be2b86ca-8d8f-479e-a1b3-2482f230b6bc" />
 
