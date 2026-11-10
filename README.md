@@ -27,27 +27,27 @@ Before any data reaches the CRM, raw input fields (`First Name`, `Last Name`, `E
   =ARRAYFORMULA(IF(ISBLANK(A2:A), "", TRIM(A2:A & " " & B2:B)))
 Automates full name merging down the sheet without requiring manual formula drag-downs.
 
-Corporate Domain Extraction (Column J):
 
-Excel
+* **Corporate Domain Extraction (`Column J`):**
+```excel
 =IF(ISBLANK(E2), "", RIGHT(E2, LEN(E2) - FIND("@", E2)))
 Isolates domain strings for account-level matching and organizational grouping.
 
-Relational SLA Lookup (Column I):
+* **Relational SLA Lookup (`Column I`):**
 
-Excel
+```excel
 =IFERROR(XLOOKUP(H2, Reference_Data!A:A, Reference_Data!B:B, "Unassigned"), "")
 Maps Lead Rating against the target response window defined in the relational lookup sheet.
 
-Operational Action Priority (Column L):
+* **Operational Action Priority (`Column L`):**
 
-Excel
+```excel
 =IFS(H2="Hot", "Priority 1 - Direct Call", H2="Warm", "Priority 2 - Email Sequence", H2="Cold", "Priority 3 - Monthly Newsletter", TRUE, "Unassigned")
 Assigns immediate action protocols based on lead urgency.
 
-Real-Time Executive SQL Reporting (Hot_Leads_Dashboard Tab):
+* **Real-Time Executive SQL Reporting (`Hot_Leads_Dashboard Tab`):**
 
-Excel
+```excel
 =QUERY(Leads!A2:L, "SELECT C, D, E, H, I, L WHERE H = 'Hot' AND K = 'Pending' ORDER BY C ASC", 0)
 Filters and displays pending high-priority prospects for executive visibility.
 
