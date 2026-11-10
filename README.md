@@ -7,7 +7,6 @@
 
 ---
 
-
 ## Executive Summary & Architecture
 
 This project automates the B2B lead intake process, transforming raw form entries into enriched CRM records and real-time executive alerts. By applying dynamic data engineering formulas inside Google Sheets before triggering Zapier automation, the system eliminates manual data entry, reduces error rates, and ensures high-priority (`Hot`) leads trigger immediate sales SLAs.
@@ -16,7 +15,6 @@ This project automates the B2B lead intake process, transforming raw form entrie
 `[ Raw Google Sheet Entry ]` ──► `[ Dynamic Pre-Processing & SQL Filtering ]` ──► `[ Zapier Filter Logic ]` ──► `[ Salesforce Lead Creation ]` ──► `[ Executive Gmail Alert ]`
 
 ---
-
 
 ## 1. Data Engineering & Pre-Processing (Google Sheets)
 
@@ -54,6 +52,7 @@ Excel
 Filters and displays pending high-priority prospects for executive visibility.
 
 Data Pre-Processing & Reference Logic Proof
+
 Figure 1: Google Sheets Dynamic Pre-Processing (Leads Tab)
 <img width="1366" height="768" alt="01_GoogleSheets_Leads_Preprocessed" src="https://github.com/user-attachments/assets/8aad4e3d-038b-4a52-bce2-c4b6c2217d1b" />
 
@@ -65,7 +64,7 @@ Figure 2: Relational Reference Data Schema (Reference_Data Tab)
 Figure 3: SQL-Style Real-Time Executive View (Hot_Leads_Dashboard Tab)
 <img width="1366" height="768" alt="03_GoogleSheets_HotLeads_Dashboard_Query" src="https://github.com/user-attachments/assets/3e18ccf2-45ef-40da-a377-eab864571a2b" />
 
-
+---
 
 ## 2. Automation Architecture & Integration (Zapier)
 
@@ -92,7 +91,7 @@ Figure 5: Salesforce CRM Ingested Record View
 Figure 6: Executive SLA Gmail Alert Dispatch
 <img width="1366" height="768" alt="06_Gmail_Executive_SLA_Notification" src="https://github.com/user-attachments/assets/ce9037f8-dcad-4590-a9a6-ca7541d8f822" />
 
-
+---
 
 ## 3. Verification & Scenario Test Results
 
